@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  여백(Spacing)
+  CSS를 사용하여 여백을 표현하는 방법을 알아보자
+ -->
+<head>
+  <meta charset="UTF-8">
+  <title>CSS_02</title>
+</head>
+<body>
+
+  <!--
+    마진(Margin)
+    마진은 해당 태그의 바깥쪽 여백을 담당하게 된다.
+    만약 우리가 값을 1개만 주면 좌우상하 모두다 해당 값으로 여백을 가지게 된다.
+    2개의 값을 주면 앞의 값은 좌우 뒤의 값은 상하 여백을 담당하게 된다.
+    margin: 00 00 00 00 ;
+    margin: 상 우 하 좌; => 각각의 여백값을 담당한다.
+    -->
+  <p style="border: 10px solid black; margin: 50px 100px;"> Margin 은 해당 영역이 표시되고 얼마 만큼의 바깥 여유 공간을 둘 지를 뜻한다.</p>
+  <p style="border: 10px solid black; margin: 50px 100px 100px 200px;"> Margin 은 해당 영역이 표시되고 얼마 만큼의 바깥 여유 공간을 둘 지를 뜻한다.</p>
+
+  <!--
+    패딩 (padding)
+    패딩은 마진과 정 반대로 해당 태그 내부에 여백을 설정하게 된다.
+    이름만 다르고 나머지 부분은 모두다 같다 .
+
+    갑 1개 일때: 상
+    값 2개 일때: 앞에 값은 상하, 뒤에 값은 좌우
+    값 4개 일대 : 각각 상 우 하 좌 설정
+    또는 padding-top, padding-bottom, padding-right, padding-left로 개별 설정
+   -->
+  <p style="border: 10px solid black;"> 이 친구는 아무런 패딩 설정이 안되어 있습니다.</p>
+  <p style="border: 10px solid black; padding: 20px;"> 이 친구는 padding 값이 하나만 설정되어있습니다.</p>
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 01</title>
+</head>
+<body>
+  <!--
+    CSS(Cascading Style Sheet)
+    CSS란, 특정 태그나 특정 선택 요소에 우리가 원하는대로 스타일을 입힐 때 사용이 된다.
+    CSS의 경우, Cascading 이라는 말에서 힌트를 얻을 수가 있는데, 만약 부모 태그에 적용된 스타일은
+    자동적으로 자식 태그들한테도 똑같이 적용이 된다.
+
+     CSS는 3가지 방법으로 적용이 가능하다
+     1. 태그 안에 Style 어트리뷰트로 적용시키기
+     2. head 태그 안에 style 태그를 만들어서 적용시키기
+     3. css 파일 생성 후 해당 파일을 불러오기
+  -->
+
+  <!--
+    색깔 표현하기
+    우리가 색깔을 설정할 떄에는 어떤 것의 색깔인지, 무슨 색을 사용할 것인지를 지정한다.
+    주로 쓰는 것은
+    1.  color: 해당 태그의 나오는 글자의 색
+    2. background-color: 해당 태그의 표시되는 영역의 배경색
+    3. border: 해당 태그의 표시되는 영역의 테두리색
+    이 있다.
+
+    색상을 지정할 때에는
+    1. 특정 색의 이름을 직접 입력하기
+    2. RGB 값 적기
+    3. Hexacode 값 적기
+    가 가능하다.
+  -->
+
+<p style ="color: red;">이것은 붉은색 글씨 입니다.</p>
+<p style = "color: blue;">이것은 파란색 글씨 입니다.</p>
+<ul style = "color: green;">이것은 초록색 ul입니다.
+  <li style = "color: pink;">1번 아이템</li>
+  <li>2번 아이템</li>
+  <li>3번 아이템</li>
+</ul>
+
+<hr/> <!--가로로 긴 줄을 넣어준다. 여러개의 영역을 서로 구분 시켜줄때 쓰면 좋다 -->
+
+  <p style = "background-color : red;">여기에 나와있는 글씨는 빨간색 바탕 안에 적혀있습니다.</p>
+  <p style = "background-color : pink;">여기는 핑크색 바탕</p>
+  <p style = "background-color : #222; color:#fff;">저기는 검은색</p>
+
+<hr/>
+
+<h1 style = "border: 4px dashed coral;">이 태그는 테두리가 산호색으로 되어있습니다.</h1>
+<hr/>
+
+<h2 style = "color: tomato;">나는야 멋쟁이 토마토</h2>
+<h2 style = "color: rgb(255, 99, 30);">나도 토마토</h2>
+<h2 style = "color:#ff6347;">여기도 토마토</h2>
+<hr/>
+<!--지금까지 배운걸 복합적으로 써먹어 보자-->
+<!--검은색 3px 테두리로 감싸져 있고 배경색은 빨강색, 글자색은 베이지색으로 hello world!를 출력해보자-->
+
+<h1 style = "background-color:#ff0000; color: beige; border:3px solid #000;">
+  hello world!
+</h1>
+
+<!--단, 색을 지정할때 한가지 주의할 사항은 해당 페이지의 글자들을 읽을 수 있는 색상으로 조합해야한다는 것이다. -->
+<h1 style="color:yellow; background-color:gold;">안좋은 색상의 조합</h1>
+
+</body>
+</html>
